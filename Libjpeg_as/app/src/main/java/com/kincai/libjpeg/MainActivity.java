@@ -13,12 +13,6 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 
-/**
- * MainActivity
- *
- * @author KINCAI
- *
- */
 public class MainActivity extends Activity implements OnClickListener {
     private Button mCombineCompress, mCompressBtn,mOriginalBtn,mAfterCompressBtn;
     private ImageView mImage;
