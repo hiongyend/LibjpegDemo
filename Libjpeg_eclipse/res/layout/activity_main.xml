@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/size_quality_libjpeg_compress_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="先尺寸质量再libjpeg压缩" />
+    <Button
+        android:id="@+id/compress_btn"
+        android:layout_toRightOf="@id/size_quality_libjpeg_compress_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="终极压缩" />
+
+    <Button
+        android:id="@+id/original_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/compress_btn"
+        android:text="原图" />
+
+    <Button
+        android:id="@+id/after_compress_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/original_btn"
+        android:layout_below="@id/compress_btn"
+        android:text="压缩后" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/after_compress_btn"
+        android:contentDescription="@null"
+        android:scaleType="centerInside" />
+
+</RelativeLayout>
